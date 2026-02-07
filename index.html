@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandton Fleurs | Premium Floral Design Studio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .cormorant {
+        font-family: "Cormorant Garamond", serif;
+      }
+      .product-card {
+        transition: all 0.3s ease;
+        border: 1px solid #e5e5e5;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+      .section-divider {
+        border-top: 1px solid #000;
+        width: 80px;
+        margin: 2rem auto;
+      }
+      .hero-bg {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .parallax-bg {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-black">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-5">
+          <div class="flex items-center">
+            <div
+              class="w-10 h-10 bg-black rounded-full flex items-center justify-center mr-3"
+            >
+              <i class="fas fa-rose text-white"></i>
+            </div>
+            <div>
+              <h1 class="cormorant text-3xl font-semibold tracking-wide">
+                Sandton Fleurs
+              </h1>
+              <p class="text-xs tracking-widest">PREMIUMLY STYLED FLEURS</p>
+            </div>
+          </div>
+
+          <nav class="hidden md:flex space-x-8">
+            <a href="#shop" class="font-medium hover:text-gray-700"
+              >Collections</a
+            >
+            <a href="#services" class="font-medium hover:text-gray-700"
+              >Services</a
+            >
+            <a href="#gallery" class="font-medium hover:text-gray-700"
+              >Gallery</a
+            >
+            <a href="#about" class="font-medium hover:text-gray-700">About</a>
+            <a href="#contact" class="font-medium hover:text-gray-700"
+              >Contact</a
+            >
+          </nav>
+
+          <a
+            href="https://wa.me/27762183239"
+            target="_blank"
+            class="bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition hidden md:inline-block"
+          >
+            <i class="fab fa-whatsapp mr-2"></i> Order Now
+          </a>
+
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-black">
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden border-t border-gray-200 py-4"
+        >
+          <div class="flex flex-col space-y-4">
+            <a href="#shop" class="font-medium py-2">Collections</a>
+            <a href="#services" class="font-medium py-2">Services</a>
+            <a href="#gallery" class="font-medium py-2">Gallery</a>
+            <a href="#about" class="font-medium py-2">About</a>
+            <a href="#contact" class="font-medium py-2">Contact</a>
+            <a
+              href="https://wa.me/27762183239"
+              target="_blank"
+              class="bg-black text-white py-2 px-4 text-center font-medium"
+            >
+              <i class="fab fa-whatsapp mr-2"></i> Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero-bg text-white py-24 md:py-32">
+      <div class="container mx-auto px-4 text-center">
+        <p class="tracking-widest text-sm mb-4">VALENTINE 2026 COLLECTION</p>
+        <h2
+          class="cormorant text-5xl md:text-7xl font-medium mb-6 leading-tight"
+        >
+          ELEGANT FLORAL ART<br />FOR THE DISCERNING CLIENT
+        </h2>
+        <p class="text-xl max-w-2xl mx-auto mb-10">
+          Delivering Premiumly styled Flowers to the Premium Client across
+          Sandton and Johannesburg North
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+        >
+          <a
+            href="#shop"
+            class="bg-white text-gray-800 font-medium py-3 px-8 hover:bg-gray-100 transition inline-block"
+          >
+            Explore Collections
+          </a>
+          <a
+            href="https://wa.me/27762183239?text=Hi%20Sandton%20Fleurs!%20I'd%20like%20to%20inquire%20about%20your%20Valentine%202026%20collections."
+            target="_blank"
+            class="border border-white text-white font-medium py-3 px-8 hover:bg-white hover:text-gray-800 transition inline-block"
+          >
+            <i class="fab fa-whatsapp mr-2"></i> Book Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section id="shop" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="cormorant text-4xl text-center mb-4">
+          FEATURED COLLECTIONS
+        </h2>
+        <div class="section-divider"></div>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+          Discover our premium Valentine's rose arrangements, each meticulously
+          crafted for elegance and impact.
+        </p>
+
+        <!-- Products Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          id="products-container"
+        >
+          <!-- Products will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50 border-t border-black">
+      <div class="container mx-auto px-4">
+        <h2 class="cormorant text-4xl text-center mb-4">
+          PREMIUM ADD-ON SERVICES
+        </h2>
+        <div class="section-divider"></div>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+          Enhance your floral gift with our curated luxury additions and
+          specialized services.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <!-- Service 1 -->
+          <div class="bg-white p-6 border border-gray-200 hover-lift">
+            <div class="h-48 overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Hampers"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="cormorant text-xl font-medium mb-2">
+              Luxury Gift Hampers
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Curated combinations of premium chocolates, artisanal wines, and
+              floral elements.
+            </p>
+            <p class="text-lg font-medium mb-4">From R1500</p>
+            <button
+              onclick="orderService('Luxury Gift Hampers from R1500')"
+              class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
+            >
+              Add to Order
+            </button>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-white p-6 border border-gray-200 hover-lift">
+            <div class="h-48 overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Self Care"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="cormorant text-xl font-medium mb-2">
+              Self-Care Hampers
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Premium skincare, candles, and relaxation products for the
+              ultimate pampering experience.
+            </p>
+            <p class="text-lg font-medium mb-4">From R1600</p>
+            <button
+              onclick="orderService('Self-Care Hampers from R1600')"
+              class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
+            >
+              Add to Order
+            </button>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white p-6 border border-gray-200 hover-lift">
+            <div class="h-48 overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Personal Shopping"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="cormorant text-xl font-medium mb-2">
+              Personal Shopping
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Luxury personal shopping service to complement your floral gift
+              with the perfect accessory.
+            </p>
+            <p class="text-lg font-medium mb-4">From R500</p>
+            <button
+              onclick="orderService('Luxury Personal Shopping from R500')"
+              class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
+            >
+              Add to Order
+            </button>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-white p-6 border border-gray-200 hover-lift">
+            <div class="h-48 overflow-hidden mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1575224300306-1b8da36134ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Custom Calligraphy"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="cormorant text-xl font-medium mb-2">
+              Custom Calligraphy
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Hand-lettered cards and personalized messages to accompany your
+              floral arrangement.
+            </p>
+            <p class="text-lg font-medium mb-4">From R200</p>
+            <button
+              onclick="orderService('Custom Calligraphy from R200')"
+              class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
+            >
+              Add to Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 border-t border-black">
+      <div class="container mx-auto px-4">
+        <h2 class="cormorant text-4xl text-center mb-4">OUR WORK</h2>
+        <div class="section-divider"></div>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+          A visual journey through our premium floral designs and client
+          installations.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 1"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 2"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 3"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 4"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 5"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+          <div class="h-64 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Floral Design 6"
+              class="w-full h-full object-cover hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="inline-block border border-black px-6 py-3 font-medium hover:bg-black hover:text-white transition"
+          >
+            <i class="fab fa-instagram mr-2"></i> Follow Our Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 border-t border-black bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="cormorant text-4xl text-center mb-8">
+            ABOUT SANDTON FLEURS
+          </h2>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12"
+          >
+            <div>
+              <h3 class="cormorant text-2xl font-medium mb-6">
+                Our Philosophy
+              </h3>
+              <p class="mb-6 leading-relaxed">
+                Sandton Fleurs is a premier floral design studio specializing in
+                bespoke arrangements for discerning clients. Founded by Khomotso
+                Bambo, we bring artistry, elegance, and meticulous attention to
+                detail to every floral creation.
+              </p>
+              <p class="mb-6 leading-relaxed">
+                We believe flowers are not just decorations but expressions of
+                emotion, art, and personal style. Each arrangement is crafted
+                with intention, using only the finest blooms sourced from
+                trusted growers.
+              </p>
+
+              <div class="border-l-4 border-black pl-4 py-2 mb-6">
+                <p class="cormorant text-xl font-medium">Khomotso Bambo</p>
+                <p class="text-gray-600">Founder & Creative Director</p>
+              </div>
+            </div>
+
+            <div class="h-96 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="About Sandton Fleurs"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Business Info -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6 border border-gray-200">
+              <i class="fas fa-map-marker-alt text-2xl mb-4"></i>
+              <h4 class="cormorant text-xl font-medium mb-2">Location</h4>
+              <p>149 Clairewood, Sandton</p>
+              <p class="text-sm text-gray-600 mt-2">
+                Serving Sandton & JHB North
+              </p>
+            </div>
+
+            <div class="p-6 border border-gray-200">
+              <i class="fas fa-clock text-2xl mb-4"></i>
+              <h4 class="cormorant text-xl font-medium mb-2">Business Hours</h4>
+              <p>Mon-Fri: 8am-6pm</p>
+              <p>Sat-Sun: 8am-2pm</p>
+            </div>
+
+            <div class="p-6 border border-gray-200">
+              <i class="fas fa-phone text-2xl mb-4"></i>
+              <h4 class="cormorant text-xl font-medium mb-2">Contact</h4>
+              <p>076 218 3239</p>
+              <p class="text-sm text-gray-600 mt-2">khomobambo@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section
+      class="py-20 border-t border-black parallax-bg"
+      style="
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+          url(&quot;https://images.unsplash.com/photo-1519789110007-0e751882be76?ixlib=rb-4.0.3&auto=format&fit=crop&w=1800&q=80&quot;);
+      "
+    >
+      <div class="container mx-auto px-4">
+        <h2 class="cormorant text-4xl text-center mb-4">CLIENT TESTIMONIALS</h2>
+        <div class="section-divider"></div>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+          What our premium clients say about their Sandton Fleurs experience.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 border border-gray-200">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium">Sarah M.</p>
+                <p class="text-sm text-gray-600">Sandton Client</p>
+              </div>
+            </div>
+            <p class="italic mb-6">
+              "The Valentine's arrangement from Sandton Fleurs was breathtaking.
+              The attention to detail and quality of the roses was exceptional.
+              Highly recommend for any special occasion."
+            </p>
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 border border-gray-200">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium">James P.</p>
+                <p class="text-sm text-gray-600">Corporate Client</p>
+              </div>
+            </div>
+            <p class="italic mb-6">
+              "We've used Sandton Fleurs for three corporate events now. Their
+              professionalism, creativity, and premium quality never disappoint.
+              Khomotso's attention to detail is remarkable."
+            </p>
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 border border-gray-200">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div>
+                <p class="font-medium">Lerato K.</p>
+                <p class="text-sm text-gray-600">Wedding Client</p>
+              </div>
+            </div>
+            <p class="italic mb-6">
+              "Our wedding flowers were beyond what we imagined. Sandton Fleurs
+              created magical installations that perfectly captured our vision.
+              Worth every rand for the premium quality."
+            </p>
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 border-t border-black">
+      <div class="container mx-auto px-4">
+        <h2 class="cormorant text-4xl text-center mb-12">
+          CONTACT & ORDER INQUIRIES
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Contact Form -->
+          <div class="border border-black p-8">
+            <h3 class="cormorant text-2xl font-medium mb-6">
+              Send Us a Message
+            </h3>
+            <p class="mb-6">
+              For inquiries, custom orders, or consultations, please reach out
+              via WhatsApp for the quickest response.
+            </p>
+
+            <div class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium mb-2"
+                  >Your WhatsApp Number</label
+                >
+                <input
+                  type="tel"
+                  id="user-phone"
+                  placeholder="076 XXX XXXX"
+                  class="w-full border border-gray-300 p-3"
+                />
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium mb-2"
+                  >Your Message</label
+                >
+                <textarea
+                  id="user-message"
+                  rows="4"
+                  placeholder="I'm interested in..."
+                  class="w-full border border-gray-300 p-3"
+                ></textarea>
+              </div>
+
+              <button
+                onclick="sendCustomWhatsApp()"
+                class="w-full bg-black text-white py-4 font-medium hover:bg-gray-800 transition"
+              >
+                <i class="fab fa-whatsapp mr-2"></i> Send via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="cormorant text-2xl font-medium mb-6">Direct Contact</h3>
+
+            <div class="mb-10">
+              <h4 class="font-medium mb-4 flex items-center">
+                <i class="fas fa-user mr-3"></i> Business Owner
+              </h4>
+              <div class="ml-8">
+                <p class="text-lg font-medium mb-1">Khomotso Bambo</p>
+                <p class="text-gray-600">Founder & Creative Director</p>
+              </div>
+            </div>
+
+            <div class="mb-10">
+              <h4 class="font-medium mb-4">Contact Details</h4>
+              <div class="space-y-4 ml-4">
+                <a
+                  href="tel:0762183239"
+                  class="flex items-center text-gray-700 hover:text-black"
+                >
+                  <i class="fas fa-phone mr-4"></i>
+                  <div>
+                    <p class="font-medium">076 218 3239</p>
+                    <p class="text-sm text-gray-600">Call or WhatsApp</p>
+                  </div>
+                </a>
+                <a
+                  href="mailto:khomobambo@gmail.com"
+                  class="flex items-center text-gray-700 hover:text-black"
+                >
+                  <i class="fas fa-envelope mr-4"></i>
+                  <div>
+                    <p class="font-medium">khomobambo@gmail.com</p>
+                    <p class="text-sm text-gray-600">
+                      Email for detailed inquiries
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="border border-gray-200 p-6">
+              <h4 class="font-medium mb-4">Quick Order</h4>
+              <p class="mb-6 text-sm">
+                For immediate orders, click below to start a WhatsApp
+                conversation with product details pre-filled.
+              </p>
+
+              <a
+                href="https://wa.me/27762183239?text=Hi%20Sandton%20Fleurs!%20I'd%20like%20to%20place%20an%20order."
+                target="_blank"
+                class="block w-full bg-black text-white text-center py-3 font-medium hover:bg-gray-800 transition mb-4"
+              >
+                <i class="fab fa-whatsapp mr-2"></i> Start New Order
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-10 h-10 border border-white rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-rose"></i>
+              </div>
+              <div>
+                <h3 class="cormorant text-2xl">Sandton Fleurs</h3>
+                <p class="text-xs tracking-widest text-gray-300">
+                  PREMIUMLY STYLED FLEURS
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-300 max-w-md">
+              Delivering Premiumly styled Flowers to the Premium Client across
+              Sandton and Johannesburg North. 149 Clairewood, Sandton.
+            </p>
+          </div>
+
+          <div class="text-center md:text-right">
+            <p class="mb-4 font-medium">Khomotso Bambo</p>
+            <div class="space-y-2">
+              <a
+                href="tel:0762183239"
+                class="block text-gray-300 hover:text-white"
+              >
+                <i class="fas fa-phone mr-2"></i> 076 218 3239
+              </a>
+              <a
+                href="mailto:khomobambo@gmail.com"
+                class="block text-gray-300 hover:text-white"
+              >
+                <i class="fas fa-envelope mr-2"></i> khomobambo@gmail.com
+              </a>
+              <a
+                href="https://rosabespoke.co.za"
+                target="_blank"
+                class="block text-gray-300 hover:text-white mt-4"
+              >
+                <i class="fas fa-link mr-2"></i> Visit Our Partners
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2026 Sandton Fleurs. Premium Floral Design Studio. All orders
+            via WhatsApp.
+          </p>
+          <p class="text-sm mt-2">
+            Business Hours: Mon-Fri 8am-6pm | Sat-Sun 8am-2pm
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div
+      id="product-modal"
+      class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden overflow-y-auto"
+    >
+      <div class="container mx-auto px-4 py-12">
+        <div class="bg-white max-w-4xl mx-auto rounded-sm">
+          <div
+            class="p-6 border-b border-black flex justify-between items-center"
+          >
+            <h3 id="modal-title" class="cormorant text-3xl font-medium">
+              Product Details
+            </h3>
+            <button id="close-modal" class="text-2xl">&times;</button>
+          </div>
+
+          <div class="p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <div class="h-96 bg-gray-100 mb-4 overflow-hidden">
+                  <img
+                    id="modal-image"
+                    src=""
+                    alt="Product Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <h4
+                  id="modal-product-name"
+                  class="cormorant text-2xl font-medium mb-4"
+                ></h4>
+                <p id="modal-description" class="mb-6 text-gray-700"></p>
+
+                <div class="mb-8">
+                  <p class="text-3xl font-medium mb-2" id="modal-price"></p>
+                  <p class="text-gray-600 text-sm" id="modal-details"></p>
+                </div>
+
+                <div class="mb-8">
+                  <h5 class="font-medium mb-2">Delivery Information</h5>
+                  <p class="text-gray-700 text-sm">
+                    Delivery available in JHB North for R99. Please allow 24-48
+                    hours for delivery scheduling. Free delivery for orders over
+                    R5000.
+                  </p>
+                </div>
+
+                <button
+                  id="modal-whatsapp"
+                  class="w-full bg-black text-white py-4 font-medium hover:bg-gray-800 transition mb-4"
+                >
+                  <i class="fab fa-whatsapp mr-2"></i> Inquire & Order on
+                  WhatsApp
+                </button>
+
+                <p class="text-center text-sm text-gray-600">
+                  You'll be redirected to WhatsApp with pre-filled product
+                  details
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Product data with actual images
+      const products = [
+        {
+          id: 1,
+          name: "Classic Red Roses",
+          type: "Red Roses",
+          buds: 20,
+          price: 800,
+          image:
+            "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "Timeless elegance with our premium red rose arrangement. Perfect for expressing deep affection and romantic love. Each stem is hand-selected for perfection.",
+          details:
+            "20 premium red rose buds, hand-tied with satin ribbon and presented in our signature black box.",
+        },
+        {
+          id: 2,
+          name: "Blush Pink Arrangement",
+          type: "Pink Roses",
+          buds: 30,
+          price: 1000,
+          image:
+            "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "Soft and romantic blush pink roses that convey admiration and sweetness. A delicate expression of affection for special moments.",
+          details:
+            "30 premium pink rose buds, arranged with complementary greenery in a crystal vase.",
+        },
+        {
+          id: 3,
+          name: "Elegant White Roses",
+          type: "White Roses",
+          buds: 40,
+          price: 1400,
+          image:
+            "https://images.unsplash.com/photo-1559561726-1dfb8bd267b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "Pure and sophisticated white roses symbolizing new beginnings and eternal loyalty. Perfect for weddings and anniversaries.",
+          details:
+            "40 pristine white rose buds, arranged with eucalyptus and presented in a luxury ceramic vase.",
+        },
+        {
+          id: 4,
+          name: "Dual Tone Elegance",
+          type: "Red & White Roses",
+          buds: 50,
+          price: 1800,
+          image:
+            "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "A striking combination of red and white roses representing unity and harmonious love. A visually stunning statement piece.",
+          details:
+            "50 premium buds (25 red, 25 white), professionally arranged with seasonal foliage in a glass bowl.",
+        },
+        {
+          id: 5,
+          name: "Grand Red Display",
+          type: "Red Roses",
+          buds: 100,
+          price: 4000,
+          image:
+            "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "An impressive arrangement of 100 deep red roses making a grand statement of passionate love. Perfect for proposals and major celebrations.",
+          details:
+            "100 premium red rose buds, expertly arranged in a large luxury vase with decorative elements.",
+        },
+        {
+          id: 6,
+          name: "Luxury Mixed Bouquet",
+          type: "Mixed Roses",
+          buds: 60,
+          price: 2200,
+          image:
+            "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+          description:
+            "A luxurious mix of rose varieties and colors, creating a visually stunning and fragrant display that captivates all senses.",
+          details:
+            "60 premium mixed rose buds (red, white, pink), arranged with assorted greenery and delivered in a gift box.",
+        },
+      ];
+
+      // Initialize products on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        const productsContainer = document.getElementById("products-container");
+
+        // Load product cards
+        products.forEach((product) => {
+          const productCard = document.createElement("div");
+          productCard.className =
+            "product-card bg-white rounded-sm overflow-hidden";
+          productCard.innerHTML = `
+                    <div class="h-64 bg-gray-100 overflow-hidden">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="cormorant text-xl font-medium mb-2">${product.name}</h3>
+                        <p class="text-gray-600 text-sm mb-4">${product.type} • ${product.buds} Buds</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-2xl font-medium">R${product.price}</p>
+                            <div>
+                                <button class="view-details border border-black px-4 py-2 text-sm font-medium mr-2 hover:bg-black hover:text-white transition" data-id="${product.id}">
+                                    Details
+                                </button>
+                                <button class="whatsapp-order bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition" data-id="${product.id}">
+                                    <i class="fab fa-whatsapp mr-1"></i> Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+          productsContainer.appendChild(productCard);
+        });
+
+        // Mobile menu toggle
+        document
+          .getElementById("menu-toggle")
+          .addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+          });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll("#mobile-menu a").forEach((link) => {
+          link.addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.add("hidden");
+          });
+        });
+
+        // Setup product detail buttons
+        document.querySelectorAll(".view-details").forEach((button) => {
+          button.addEventListener("click", function () {
+            const productId = parseInt(this.getAttribute("data-id"));
+            openProductModal(productId);
+          });
+        });
+
+        // Setup WhatsApp order buttons
+        document.querySelectorAll(".whatsapp-order").forEach((button) => {
+          button.addEventListener("click", function () {
+            const productId = parseInt(this.getAttribute("data-id"));
+            const product = products.find((p) => p.id === productId);
+            if (product) {
+              const message = `Hi Sandton Fleurs! I'm interested in ordering: ${product.name} (${product.type} - ${product.buds} Buds) for R${product.price}.`;
+              const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
+              window.open(url, "_blank");
+            }
+          });
+        });
+
+        // Modal close button
+        document
+          .getElementById("close-modal")
+          .addEventListener("click", function () {
+            document.getElementById("product-modal").classList.add("hidden");
+          });
+
+        // Modal WhatsApp button
+        document
+          .getElementById("modal-whatsapp")
+          .addEventListener("click", function () {
+            const productId = parseInt(this.getAttribute("data-id"));
+            const product = products.find((p) => p.id === productId);
+            if (product) {
+              const message = `Hi Sandton Fleurs! I'm interested in ordering: ${product.name} (${product.type} - ${product.buds} Buds) for R${product.price}.`;
+              const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
+              window.open(url, "_blank");
+            }
+          });
+
+        // Close modal when clicking outside
+        document
+          .getElementById("product-modal")
+          .addEventListener("click", function (e) {
+            if (e.target.id === "product-modal") {
+              this.classList.add("hidden");
+            }
+          });
+      });
+
+      // Function to open product modal
+      function openProductModal(productId) {
+        const product = products.find((p) => p.id === productId);
+        if (!product) return;
+
+        // Set modal content
+        document.getElementById("modal-title").textContent = product.name;
+        document.getElementById("modal-product-name").textContent =
+          product.name;
+        document.getElementById("modal-description").textContent =
+          product.description;
+        document.getElementById("modal-price").textContent =
+          `R${product.price}`;
+        document.getElementById("modal-details").textContent =
+          `${product.type} • ${product.buds} Premium Buds`;
+        document.getElementById("modal-image").src = product.image;
+        document.getElementById("modal-image").alt = product.name;
+
+        // Set data attribute on WhatsApp button
+        document
+          .getElementById("modal-whatsapp")
+          .setAttribute("data-id", productId);
+
+        // Show modal
+        document.getElementById("product-modal").classList.remove("hidden");
+      }
+
+      // Function for service orders
+      function orderService(serviceName) {
+        const message = `Hi Sandton Fleurs! I'm interested in your ${serviceName} service.`;
+        const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+      }
+
+      // Function for custom WhatsApp message
+      function sendCustomWhatsApp() {
+        const phone = document.getElementById("user-phone").value;
+        const message = document.getElementById("user-message").value;
+
+        let fullMessage = "Hi Sandton Fleurs! ";
+
+        if (message) {
+          fullMessage += message;
+        } else {
+          fullMessage += "I'd like to inquire about your services.";
+        }
+
+        if (phone) {
+          fullMessage += ` My contact number is ${phone}.`;
+        }
+
+        const url = `https://wa.me/27762183239?text=${encodeURIComponent(fullMessage)}`;
+        window.open(url, "_blank");
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("shadow-md");
+        } else {
+          header.classList.remove("shadow-md");
+        }
+      });
+    </script>
+  </body>
+</html>
