@@ -162,7 +162,7 @@
       </div>
     </section>
 
-    <!-- Featured Collections Section -->
+    <!-- Featured Collections Section (loaded from products.html) -->
     <section id="shop" class="py-20">
       <div class="container mx-auto px-4">
         <h2 class="cormorant text-4xl text-center mb-4">
@@ -174,9 +174,9 @@
           crafted for elegance and impact.
         </p>
 
-        <!-- Products Grid -->
+        <!-- Products Grid - 4 Columns -->
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
           id="products-container"
         >
           <!-- Products will be dynamically loaded here -->
@@ -199,23 +199,22 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           <!-- Service 1 -->
           <div class="bg-white p-6 border border-gray-200 hover-lift">
-            <div class="h-48 overflow-hidden mb-4">
+            <div class="h-72 overflow-hidden mb-4">
               <img
-                src="https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Luxury Hampers"
+                src="add_on_services/Exam Pack.jpeg"
+                alt="Exam Pack"
                 class="w-full h-full object-cover"
               />
             </div>
-            <h3 class="cormorant text-xl font-medium mb-2">
-              Luxury Gift Hampers
-            </h3>
+            <h3 class="cormorant text-xl font-medium mb-2">Exam Care Pack</h3>
             <p class="text-gray-600 text-sm mb-4">
-              Curated combinations of premium chocolates, artisanal wines, and
-              floral elements.
+              Energize your loved one's exam season with our curated care
+              package featuring healthy snacks, motivational notes, and premium
+              gifts.
             </p>
-            <p class="text-lg font-medium mb-4">From R1500</p>
+            <p class="text-lg font-medium mb-4">From R800</p>
             <button
-              onclick="orderService('Luxury Gift Hampers from R1500')"
+              onclick="orderService('Exam Care Pack from R800')"
               class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
             >
               Add to Order
@@ -224,23 +223,23 @@
 
           <!-- Service 2 -->
           <div class="bg-white p-6 border border-gray-200 hover-lift">
-            <div class="h-48 overflow-hidden mb-4">
+            <div class="h-72 overflow-hidden mb-4">
               <img
-                src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Self Care"
+                src="add_on_services/Personalised Medium Box.jpeg"
+                alt="Personalised Medium Box"
                 class="w-full h-full object-cover"
               />
             </div>
             <h3 class="cormorant text-xl font-medium mb-2">
-              Self-Care Hampers
+              Personalised Medium Box
             </h3>
             <p class="text-gray-600 text-sm mb-4">
-              Premium skincare, candles, and relaxation products for the
-              ultimate pampering experience.
+              Customized gift box featuring your personal selection of premium
+              items, chocolates, and personalized touches.
             </p>
-            <p class="text-lg font-medium mb-4">From R1600</p>
+            <p class="text-lg font-medium mb-4">From R1200</p>
             <button
-              onclick="orderService('Self-Care Hampers from R1600')"
+              onclick="orderService('Personalised Medium Box from R1200')"
               class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
             >
               Add to Order
@@ -249,23 +248,23 @@
 
           <!-- Service 3 -->
           <div class="bg-white p-6 border border-gray-200 hover-lift">
-            <div class="h-48 overflow-hidden mb-4">
+            <div class="h-72 overflow-hidden mb-4">
               <img
-                src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Personal Shopping"
+                src="add_on_services/Personalised Combo.jpeg"
+                alt="Personalised Combo"
                 class="w-full h-full object-cover"
               />
             </div>
             <h3 class="cormorant text-xl font-medium mb-2">
-              Personal Shopping
+              Personalised Combo
             </h3>
             <p class="text-gray-600 text-sm mb-4">
-              Luxury personal shopping service to complement your floral gift
-              with the perfect accessory.
+              The ultimate personalized experience combining multiple premium
+              items and custom selections for a truly unique gift.
             </p>
-            <p class="text-lg font-medium mb-4">From R500</p>
+            <p class="text-lg font-medium mb-4">From R1800</p>
             <button
-              onclick="orderService('Luxury Personal Shopping from R500')"
+              onclick="orderService('Personalised Combo from R1800')"
               class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
             >
               Add to Order
@@ -274,23 +273,23 @@
 
           <!-- Service 4 -->
           <div class="bg-white p-6 border border-gray-200 hover-lift">
-            <div class="h-48 overflow-hidden mb-4">
+            <div class="h-72 overflow-hidden mb-4">
               <img
-                src="https://images.unsplash.com/photo-1575224300306-1b8da36134ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Custom Calligraphy"
+                src="add_on_services/Small mixed in a Vase.jpeg"
+                alt="Small Mixed in a Vase"
                 class="w-full h-full object-cover"
               />
             </div>
             <h3 class="cormorant text-xl font-medium mb-2">
-              Custom Calligraphy
+              Small Mixed in a Vase
             </h3>
             <p class="text-gray-600 text-sm mb-4">
-              Hand-lettered cards and personalized messages to accompany your
-              floral arrangement.
+              A beautiful arrangement of mixed flowers in an elegant vase.
+              Perfect as a standalone gift or complement to your order.
             </p>
-            <p class="text-lg font-medium mb-4">From R200</p>
+            <p class="text-lg font-medium mb-4">From R400</p>
             <button
-              onclick="orderService('Custom Calligraphy from R200')"
+              onclick="orderService('Small Mixed in a Vase from R400')"
               class="w-full border border-black py-2 text-sm font-medium hover:bg-black hover:text-white transition"
             >
               Add to Order
@@ -310,43 +309,43 @@
           installations.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-          <div class="h-64 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-12">
+          <div class="h-72 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="images/1.jpeg"
               alt="Floral Design 1"
               class="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
           </div>
-          <div class="h-64 overflow-hidden">
+          <div class="h-72 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="images/8.jpeg"
               alt="Floral Design 2"
               class="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
           </div>
-          <div class="h-64 overflow-hidden">
+          <div class="h-72 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="images/5.jpeg"
               alt="Floral Design 3"
               class="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
           </div>
-          <div class="h-64 overflow-hidden">
+          <div class="h-72 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="images/2.jpeg"
               alt="Floral Design 4"
               class="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
           </div>
-          <div class="h-64 overflow-hidden">
+          <div class="h-72 overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="images/7.jpeg"
               alt="Floral Design 5"
               class="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
           </div>
-          <div class="h-64 overflow-hidden">
+          <div class="h-72 overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
               alt="Floral Design 6"
@@ -706,7 +705,7 @@
       </div>
     </footer>
 
-    <!-- Product Details Modal -->
+    <!-- Product Details Modal with Carousel -->
     <div
       id="product-modal"
       class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden overflow-y-auto"
@@ -724,17 +723,159 @@
 
           <div class="p-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <!-- Carousel Section -->
               <div>
-                <div class="h-96 bg-gray-100 mb-4 overflow-hidden">
-                  <img
-                    id="modal-image"
-                    src=""
-                    alt="Product Image"
-                    class="w-full h-full object-cover"
-                  />
+                <div class="carousel-container">
+                  <!-- Main slide display with dynamic sizing -->
+                  <div id="carousel-main" class="carousel-main">
+                    <img
+                      id="carousel-image"
+                      src=""
+                      alt="Product variation"
+                      class="carousel-image"
+                    />
+                  </div>
+
+                  <!-- Carousel Controls -->
+                  <div class="carousel-controls mt-4">
+                    <button
+                      id="carousel-prev"
+                      class="carousel-btn carousel-btn-prev"
+                      aria-label="Previous variation"
+                    >
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="carousel-indicators">
+                      <div id="carousel-counter" class="carousel-counter">
+                        1 / 1
+                      </div>
+                    </div>
+
+                    <button
+                      id="carousel-next"
+                      class="carousel-btn carousel-btn-next"
+                      aria-label="Next variation"
+                    >
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+
+                  <!-- Thumbnail strip (if multiple variations) -->
+                  <div
+                    id="carousel-thumbnails"
+                    class="carousel-thumbnails mt-4"
+                  >
+                    <!-- Thumbnails will be generated dynamically -->
+                  </div>
                 </div>
+
+                <style>
+                  .carousel-container {
+                    position: relative;
+                  }
+
+                  .carousel-main {
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 400px;
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid #e5e5e5;
+                  }
+
+                  .carousel-image {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                  }
+
+                  .carousel-controls {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 12px;
+                  }
+
+                  .carousel-btn {
+                    background-color: #000;
+                    color: #fff;
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 0.3s ease;
+                    font-size: 16px;
+                  }
+
+                  .carousel-btn:hover {
+                    background-color: #333;
+                  }
+
+                  .carousel-btn:disabled {
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                  }
+
+                  .carousel-counter {
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 500;
+                    flex-grow: 1;
+                  }
+
+                  .carousel-indicators {
+                    flex-grow: 1;
+                  }
+
+                  .carousel-thumbnails {
+                    display: flex;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                  }
+
+                  .carousel-thumbnail {
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid #e5e5e5;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    transition: border-color 0.3s ease;
+                    background-color: #f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+
+                  .carousel-thumbnail img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                    object-fit: contain;
+                  }
+
+                  .carousel-thumbnail:hover {
+                    border-color: #000;
+                  }
+
+                  .carousel-thumbnail.active {
+                    border-color: #000;
+                    background-color: #f0f0f0;
+                  }
+                </style>
               </div>
 
+              <!-- Product Details -->
               <div>
                 <h4
                   id="modal-product-name"
@@ -775,271 +916,7 @@
       </div>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-      // Product data with actual images
-      const products = [
-        {
-          id: 1,
-          name: "Classic Red Roses",
-          type: "Red Roses",
-          buds: 20,
-          price: 800,
-          image:
-            "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "Timeless elegance with our premium red rose arrangement. Perfect for expressing deep affection and romantic love. Each stem is hand-selected for perfection.",
-          details:
-            "20 premium red rose buds, hand-tied with satin ribbon and presented in our signature black box.",
-        },
-        {
-          id: 2,
-          name: "Blush Pink Arrangement",
-          type: "Pink Roses",
-          buds: 30,
-          price: 1000,
-          image:
-            "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "Soft and romantic blush pink roses that convey admiration and sweetness. A delicate expression of affection for special moments.",
-          details:
-            "30 premium pink rose buds, arranged with complementary greenery in a crystal vase.",
-        },
-        {
-          id: 3,
-          name: "Elegant White Roses",
-          type: "White Roses",
-          buds: 40,
-          price: 1400,
-          image:
-            "https://images.unsplash.com/photo-1559561726-1dfb8bd267b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "Pure and sophisticated white roses symbolizing new beginnings and eternal loyalty. Perfect for weddings and anniversaries.",
-          details:
-            "40 pristine white rose buds, arranged with eucalyptus and presented in a luxury ceramic vase.",
-        },
-        {
-          id: 4,
-          name: "Dual Tone Elegance",
-          type: "Red & White Roses",
-          buds: 50,
-          price: 1800,
-          image:
-            "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "A striking combination of red and white roses representing unity and harmonious love. A visually stunning statement piece.",
-          details:
-            "50 premium buds (25 red, 25 white), professionally arranged with seasonal foliage in a glass bowl.",
-        },
-        {
-          id: 5,
-          name: "Grand Red Display",
-          type: "Red Roses",
-          buds: 100,
-          price: 4000,
-          image:
-            "https://images.unsplash.com/photo-1562243061-204550d8a2c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "An impressive arrangement of 100 deep red roses making a grand statement of passionate love. Perfect for proposals and major celebrations.",
-          details:
-            "100 premium red rose buds, expertly arranged in a large luxury vase with decorative elements.",
-        },
-        {
-          id: 6,
-          name: "Luxury Mixed Bouquet",
-          type: "Mixed Roses",
-          buds: 60,
-          price: 2200,
-          image:
-            "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-          description:
-            "A luxurious mix of rose varieties and colors, creating a visually stunning and fragrant display that captivates all senses.",
-          details:
-            "60 premium mixed rose buds (red, white, pink), arranged with assorted greenery and delivered in a gift box.",
-        },
-      ];
-
-      // Initialize products on page load
-      document.addEventListener("DOMContentLoaded", function () {
-        const productsContainer = document.getElementById("products-container");
-
-        // Load product cards
-        products.forEach((product) => {
-          const productCard = document.createElement("div");
-          productCard.className =
-            "product-card bg-white rounded-sm overflow-hidden";
-          productCard.innerHTML = `
-                    <div class="h-64 bg-gray-100 overflow-hidden">
-                        <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="cormorant text-xl font-medium mb-2">${product.name}</h3>
-                        <p class="text-gray-600 text-sm mb-4">${product.type} • ${product.buds} Buds</p>
-                        <div class="flex justify-between items-center">
-                            <p class="text-2xl font-medium">R${product.price}</p>
-                            <div>
-                                <button class="view-details border border-black px-4 py-2 text-sm font-medium mr-2 hover:bg-black hover:text-white transition" data-id="${product.id}">
-                                    Details
-                                </button>
-                                <button class="whatsapp-order bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-800 transition" data-id="${product.id}">
-                                    <i class="fab fa-whatsapp mr-1"></i> Order
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                `;
-
-          productsContainer.appendChild(productCard);
-        });
-
-        // Mobile menu toggle
-        document
-          .getElementById("menu-toggle")
-          .addEventListener("click", function () {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("hidden");
-          });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll("#mobile-menu a").forEach((link) => {
-          link.addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.add("hidden");
-          });
-        });
-
-        // Setup product detail buttons
-        document.querySelectorAll(".view-details").forEach((button) => {
-          button.addEventListener("click", function () {
-            const productId = parseInt(this.getAttribute("data-id"));
-            openProductModal(productId);
-          });
-        });
-
-        // Setup WhatsApp order buttons
-        document.querySelectorAll(".whatsapp-order").forEach((button) => {
-          button.addEventListener("click", function () {
-            const productId = parseInt(this.getAttribute("data-id"));
-            const product = products.find((p) => p.id === productId);
-            if (product) {
-              const message = `Hi Sandton Fleurs! I'm interested in ordering: ${product.name} (${product.type} - ${product.buds} Buds) for R${product.price}.`;
-              const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
-              window.open(url, "_blank");
-            }
-          });
-        });
-
-        // Modal close button
-        document
-          .getElementById("close-modal")
-          .addEventListener("click", function () {
-            document.getElementById("product-modal").classList.add("hidden");
-          });
-
-        // Modal WhatsApp button
-        document
-          .getElementById("modal-whatsapp")
-          .addEventListener("click", function () {
-            const productId = parseInt(this.getAttribute("data-id"));
-            const product = products.find((p) => p.id === productId);
-            if (product) {
-              const message = `Hi Sandton Fleurs! I'm interested in ordering: ${product.name} (${product.type} - ${product.buds} Buds) for R${product.price}.`;
-              const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
-              window.open(url, "_blank");
-            }
-          });
-
-        // Close modal when clicking outside
-        document
-          .getElementById("product-modal")
-          .addEventListener("click", function (e) {
-            if (e.target.id === "product-modal") {
-              this.classList.add("hidden");
-            }
-          });
-      });
-
-      // Function to open product modal
-      function openProductModal(productId) {
-        const product = products.find((p) => p.id === productId);
-        if (!product) return;
-
-        // Set modal content
-        document.getElementById("modal-title").textContent = product.name;
-        document.getElementById("modal-product-name").textContent =
-          product.name;
-        document.getElementById("modal-description").textContent =
-          product.description;
-        document.getElementById("modal-price").textContent =
-          `R${product.price}`;
-        document.getElementById("modal-details").textContent =
-          `${product.type} • ${product.buds} Premium Buds`;
-        document.getElementById("modal-image").src = product.image;
-        document.getElementById("modal-image").alt = product.name;
-
-        // Set data attribute on WhatsApp button
-        document
-          .getElementById("modal-whatsapp")
-          .setAttribute("data-id", productId);
-
-        // Show modal
-        document.getElementById("product-modal").classList.remove("hidden");
-      }
-
-      // Function for service orders
-      function orderService(serviceName) {
-        const message = `Hi Sandton Fleurs! I'm interested in your ${serviceName} service.`;
-        const url = `https://wa.me/27762183239?text=${encodeURIComponent(message)}`;
-        window.open(url, "_blank");
-      }
-
-      // Function for custom WhatsApp message
-      function sendCustomWhatsApp() {
-        const phone = document.getElementById("user-phone").value;
-        const message = document.getElementById("user-message").value;
-
-        let fullMessage = "Hi Sandton Fleurs! ";
-
-        if (message) {
-          fullMessage += message;
-        } else {
-          fullMessage += "I'd like to inquire about your services.";
-        }
-
-        if (phone) {
-          fullMessage += ` My contact number is ${phone}.`;
-        }
-
-        const url = `https://wa.me/27762183239?text=${encodeURIComponent(fullMessage)}`;
-        window.open(url, "_blank");
-      }
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-
-      // Header scroll effect
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 100) {
-          header.classList.add("shadow-md");
-        } else {
-          header.classList.remove("shadow-md");
-        }
-      });
-    </script>
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
   </body>
 </html>

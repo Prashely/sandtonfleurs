@@ -1,0 +1,223 @@
+<!-- Products Section with Dynamic Carousel -->
+<section id="shop" class="py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="cormorant text-4xl text-center mb-4">FEATURED COLLECTIONS</h2>
+    <div class="section-divider"></div>
+    <p class="text-center text-gray-700 max-w-2xl mx-auto mb-12">
+      Discover our premium Valentine's rose arrangements, each meticulously
+      crafted for elegance and impact.
+    </p>
+
+    <!-- Products Grid -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
+      id="products-container"
+    >
+      <!-- Products will be dynamically loaded here -->
+    </div>
+  </div>
+</section>
+
+<!-- Product Details Modal with Carousel -->
+<div
+  id="product-modal"
+  class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden overflow-y-auto"
+>
+  <div class="container mx-auto px-4 py-12">
+    <div class="bg-white max-w-4xl mx-auto rounded-sm">
+      <div class="p-6 border-b border-black flex justify-between items-center">
+        <h3 id="modal-title" class="cormorant text-3xl font-medium">
+          Product Details
+        </h3>
+        <button id="close-modal" class="text-2xl">&times;</button>
+      </div>
+
+      <div class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Carousel Section -->
+          <div>
+            <div class="carousel-container">
+              <!-- Main slide display with dynamic sizing -->
+              <div id="carousel-main" class="carousel-main">
+                <img
+                  id="carousel-image"
+                  src=""
+                  alt="Product variation"
+                  class="carousel-image"
+                />
+              </div>
+
+              <!-- Carousel Controls -->
+              <div class="carousel-controls mt-4">
+                <button
+                  id="carousel-prev"
+                  class="carousel-btn carousel-btn-prev"
+                  aria-label="Previous variation"
+                >
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-indicators">
+                  <div id="carousel-counter" class="carousel-counter">
+                    1 / 1
+                  </div>
+                </div>
+
+                <button
+                  id="carousel-next"
+                  class="carousel-btn carousel-btn-next"
+                  aria-label="Next variation"
+                >
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+
+              <!-- Thumbnail strip (if multiple variations) -->
+              <div id="carousel-thumbnails" class="carousel-thumbnails mt-4">
+                <!-- Thumbnails will be generated dynamically -->
+              </div>
+            </div>
+
+            <style>
+              .carousel-container {
+                position: relative;
+              }
+
+              .carousel-main {
+                background-color: #f5f5f5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 400px;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #e5e5e5;
+              }
+
+              .carousel-image {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+              }
+
+              .carousel-controls {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+              }
+
+              .carousel-btn {
+                background-color: #000;
+                color: #fff;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 0.3s ease;
+                font-size: 16px;
+              }
+
+              .carousel-btn:hover {
+                background-color: #333;
+              }
+
+              .carousel-btn:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+              }
+
+              .carousel-counter {
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                flex-grow: 1;
+              }
+
+              .carousel-indicators {
+                flex-grow: 1;
+              }
+
+              .carousel-thumbnails {
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+              }
+
+              .carousel-thumbnail {
+                width: 60px;
+                height: 60px;
+                border: 2px solid #e5e5e5;
+                border-radius: 4px;
+                cursor: pointer;
+                overflow: hidden;
+                transition: border-color 0.3s ease;
+                background-color: #f5f5f5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              .carousel-thumbnail img {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+              }
+
+              .carousel-thumbnail:hover {
+                border-color: #000;
+              }
+
+              .carousel-thumbnail.active {
+                border-color: #000;
+                background-color: #f0f0f0;
+              }
+            </style>
+          </div>
+
+          <!-- Product Details -->
+          <div>
+            <h4
+              id="modal-product-name"
+              class="cormorant text-2xl font-medium mb-4"
+            ></h4>
+            <p id="modal-description" class="mb-6 text-gray-700"></p>
+
+            <div class="mb-8">
+              <p class="text-3xl font-medium mb-2" id="modal-price"></p>
+              <p class="text-gray-600 text-sm" id="modal-details"></p>
+            </div>
+
+            <div class="mb-8">
+              <h5 class="font-medium mb-2">Delivery Information</h5>
+              <p class="text-gray-700 text-sm">
+                Delivery available in JHB North for R99. Please allow 24-48
+                hours for delivery scheduling. Free delivery for orders over
+                R5000.
+              </p>
+            </div>
+
+            <button
+              id="modal-whatsapp"
+              class="w-full bg-black text-white py-4 font-medium hover:bg-gray-800 transition mb-4"
+            >
+              <i class="fab fa-whatsapp mr-2"></i> Inquire & Order on WhatsApp
+            </button>
+
+            <p class="text-center text-sm text-gray-600">
+              You'll be redirected to WhatsApp with pre-filled product details
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
