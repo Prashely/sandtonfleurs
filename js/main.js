@@ -7,7 +7,7 @@ const products = [
     name: "200 Red Roses with Gyps",
     type: "Red Roses Collection",
     buds: 200,
-    price: 3500,
+    price: 7000,
     image: "product_images/200 RED ROSES WITH GYPS INITIAL_1.jfif",
     variations: [
       "product_images/200 RED ROSES WITH GYPS INITIAL_1.jfif",
