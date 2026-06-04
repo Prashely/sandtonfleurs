@@ -69,7 +69,7 @@ const products = [
     type: "Roses with Memories",
     buds: 50,
     price: 2200,
-    image: "product_images/50 Roses wrapped with a Picture_1.jpeg",
+    image: "product_images/50 Roses wrapped with a Picture_2.jpeg",
     variations: [
       "product_images/50 Roses wrapped with a Picture_1.jpeg",
       "product_images/50 Roses wrapped with a Picture_2.jpeg",
@@ -129,19 +129,6 @@ const products = [
       "A charming and compact arrangement of mixed roses perfect for expressing affection in an elegant yet subtle way.",
     details:
       "20 premium mixed rose buds in an intimate, beautifully arranged presentation.",
-  },
-  {
-    id: 9,
-    name: "Premium Curated Bundle",
-    type: "Designer's Choice",
-    buds: 60,
-    price: 2500,
-    image: "product_images/50 Roses wrapped with a Picture_2.jpeg",
-    variations: ["product_images/50 Roses wrapped with a Picture_2.jpeg"],
-    description:
-      "Our curated bundle featuring premium selections from our collection. Let our designers choose the perfect arrangement for your special occasion.",
-    details:
-      "60 premium roses in our designer's curated selection, presented with luxury finishing touches.",
   },
 ];
 
